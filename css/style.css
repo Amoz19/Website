@@ -251,6 +251,7 @@ body{
 }
 
 .the-new h1{
+    margin-top: 20px;
     text-align: center;
 }
 .first-news img{
@@ -297,6 +298,7 @@ body{
 .container h1{
 flex: 1;
 height: 100%;
+margin-top: 30px;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -310,7 +312,6 @@ font-size: 30px;
     background: #b2bccc;
     color:#fff;
     padding: 20px 10px;
-    border-top:3px lightskyblue solid ;
 }
 
 /* .counters .icons{
@@ -325,9 +326,12 @@ font-size: 30px;
 }
 
 .counters i{
-    color: #000;
+    color: #3f3b3e;
     margin-bottom: 5px;
 }
+
+
+
 
 .counters .counter{
     font-size: 30px;
