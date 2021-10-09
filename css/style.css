@@ -15,14 +15,23 @@ body{
 } 
 .navbar img{
   width: 5%;
-  
+  position: relative;
 }
+
+/* .top-menu .navbar img::after{
+  content: 'Hi';
+  position: absolute;
+  z-index: -1;
+
+} */
+
+
 .navbar h1{
   width: 40%;
-   
-    line-height: 50px;
-    color: #fff;
-    
+  margin-left: 4px;
+  line-height: 50px;
+  color:#000;
+  border-left: 3px solid #000;   
 }
 .navbar ul{
   width: 58%;
@@ -45,9 +54,9 @@ body{
 
 .navbar ul li a{
 	text-decoration:none;
-	color:#fff;
+	color:#000;
 	font-size:20px;
-	font-weight:600;
+	font-weight:900;
   padding: 5px 0 1px 0;
   margin: 0 2px 0 20px; 
 }
@@ -56,18 +65,18 @@ body{
 	border-bottom-style: solid;
 }
 
-.navbar ul li select{
+/* .navbar ul li select{
 	border:none;
 	background:transparent;
-	color:#fff;
+	color:#000;
 	font-size:14px;
 	font-weight:700;
-}
+} */
 
 /*Fix Navbar*/
 
 .navbar.fix {
-  background:#3f3b3e;
+  background:#FAFAFA;
 }
 
 
@@ -273,9 +282,37 @@ body{
 	transition:0.5s all;
 	cursor:pointer;
 	border-radius:15px 15px;
-	margin-top:20px;
-    background-color:#cfcfcf;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+	margin-top:50px;
+    background-color:rgba(127,127,127,0.05);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
 }
+
+
+.first-news h2{
+  text-align:center;
+  margin-bottom: 20px;
+}
+
+.first-news p{
+  text-align: justify;
+}
+
+.first-news .seemore{
+  margin-top:12px;
+}
+
+.first-news .seemore a{
+  text-decoration: none;
+  color: #000;
+  margin-left: 120px;
+  text-indent: 5px;
+}
+
+.first-news .seemore a:hover{
+  font-weight: 900;
+  color: #344072;
+}
+
+
 .first-news:hover{
 	box-shadow:6px 6px 20px 10px #5f4B8BFF;
 	transform:translateX(5px);
@@ -295,7 +332,12 @@ body{
     overflow: auto;
 }
 
-.container h1{
+.container-head h1{
+  text-align: center;
+  margin:100px 0 40px 0;
+}
+
+/* .container h1{
 flex: 1;
 height: 100%;
 margin-top: 30px;
@@ -303,13 +345,13 @@ display: flex;
 align-items: center;
 justify-content: center;
 font-size: 30px;
-}
+} */
 
 
 .counters{
   width: 100%;
   height: 200px;
-    background: #b2bccc;
+  background-color: #96a2d4;
     color:#fff;
     padding: 20px 10px;
 }
@@ -353,39 +395,49 @@ font-size: 30px;
 .footer{
     display: flex;
     width: 100%;
+    height: 300px;
     margin-right: 10px;
-    background: rgba(194,146,65,0.91);
-}
-
-.about-us{
-    width: 33%;
-    color: #fff;
-    
-}
-
-.contact-us{
-    width: 33%;
-
+    background-color:#092b3a;
    
 }
+
+  
+
+
+.contact-us{
+    width: 39%;
+    color: #fff;   
+}
+
+.contact-us h3{
+  text-align: center;
+}
 .contact-us ul li a{
-  float: left;
-  margin-left: 30px;
-  margin-top: 50px;
+  float: left;;
+  margin:60px 0 30px 50px;
   cursor: pointer;
 }
 
 .map{
     width: 35%;
     margin-right: 10px;
-   
+}
+
+.map iframe{
+  border-radius: 10px;
+  width: 100%;
+  height: 300px;
 }
 
 .copyright {
-    text-align: center;
-    width: 100%;
-    height: 50px;
-    background-color:#1E9FAA;
+  width: 100%;
+  height: 50px;
+  border-top: 1px solid #fff;
+  color: #fff;
+  text-align: center;
+   
+  background-color:#092b3a;
+  line-height: 50px;
 }
 
 .icon ul li{
