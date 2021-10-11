@@ -1,3 +1,13 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  
+}
+html{
+	  scroll-behavior: smooth;
+}
 body{
 	
 	margin:0 auto;
@@ -6,32 +16,44 @@ body{
 .navbar{
 	width:100%;
   height: 60px;
+  margin: 0;
 	position:absolute;
-	z-index:2;
+	/* z-index:2; */
     display:flex;
 	justify-content:space-between;
 	position:fixed;
 	z-index:3;
+
+  background-color:#FAFAFA;
+  border-bottom: 1px solid lightgray;
+  opacity: 0.9;
 } 
 .navbar img{
+  margin-left: 50px;
   width: 5%;
   position: relative;
 }
 
-/* .top-menu .navbar img::after{
-  content: 'Hi';
+.top-menu .navbar h1::before{
+  content: '';
   position: absolute;
-  z-index: -1;
+  top:10px;
+  left:-20px;
+  right: 0;
+  
+  width:3px;
+  height: 40px;
+  background-color: #e3e3e4;
 
-} */
+}
 
 
 .navbar h1{
   width: 40%;
-  margin-left: 4px;
+  margin-left: 40px;
   line-height: 50px;
   color:#000;
-  border-left: 3px solid #000;   
+  position: relative;
 }
 .navbar ul{
   width: 58%;
@@ -41,9 +63,6 @@ body{
 
 .navbar ul li{
 	display:inline;
-	margin-right: 25px;
-  
-
 }
 /* .navbar ul li:first-child{
   margin-left: 250px;
@@ -106,11 +125,11 @@ body{
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-#hero {
+#hero{
     width: 100%;
     height: 100vh;
-   background: url("../img/img1.jpg") top center;
-    background-size: cover;
+    background-image:url('../img/slider1.png');
+    /* background-size: cover; */
     position: relative;
     animation-name: ani;
     animation-duration: 10s;
@@ -130,7 +149,7 @@ body{
   
   #hero:before {
     content: "";
-    background: rgba(0, 0, 0, 0.6);
+   /* background: rgba(0, 0, 0, 0.5);*/
     position: absolute;
     bottom: 0;
     top: 0;
@@ -148,30 +167,32 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    text-align: center;
     padding: 0 15px;
+
+    z-index: 2;
   }
   
-  #hero h3 {
+  #hero h1 {
     background: rgba(255, 255, 255, 0.1);
     color: #fff;
-    font-size: 26px;
+    font-size: 48px;
+    text-shadow: 2px 5px 1px #000;
     padding: 10px 30px;
     margin-bottom: 30px;
     border-radius: 50px;
   }
   
-  #hero h1 {
+  /* #hero h1 {
     margin: 0 0 10px 0;
     font-size: 48px;
     font-weight: 700;
     line-height: 56px;
     text-transform: uppercase;
-    color: #fff;
-  }
+    color: #000;
+  } */
   
   #hero h2 {
-    color: #eee;
+    color: #000;
     margin-bottom: 40px;
     font-size: 24px;
   }
@@ -187,7 +208,7 @@ body{
     border-radius: 50px;
     transition: 0.5s;
     border: 2px solid #fff;
-    color: #fff;
+    color: #000;
   }
   
   #hero .btn-get-started:hover {
@@ -241,31 +262,64 @@ body{
 
 @keyframes ani{
     25%{
-        background: url(../img/img1.jpg);
+      background-image:url('../img/slider1.png');
     }
     50%{
-        background: url(../img/img2.jpg);
+      background-image:url('../img/slider2.png');
     }
     75%{
-        background: url(../img/img3.jpg);
+      background-image:url('../img/slider3.png');
     }
     100%{
-        background: url(../img/img4.jpg);
+      background-image:url('../img/slider4.png');
     }
 }
 
 .the-new{
-	margin-left:10px;
 	overflow: auto;
+  /* background-color: #d2ad32; */
 }
 
 .the-new h1{
     margin-top: 20px;
     text-align: center;
+
+    position: relative;
 }
+
+.the-new h1::before{
+  content: '';
+  width: 1px;
+  height: 400px;
+
+  position: absolute;
+  top:-178px;
+  right: 380px;
+  bottom: 10px;
+
+  transform:rotate(90deg);
+  
+  background-color: #d2ad32;
+}
+
+.the-new h1::after{
+  content: '';
+  width: 1px;
+  height: 400px;
+
+  position: absolute;
+  top:-178px;
+  left: 380px;
+  bottom: 10px;
+
+  transform:rotate(90deg);
+  
+  background-color: #d2ad32;
+}
+
 .first-news img{
 	width:300px;
-	height:200px;
+	height:250px;
 	border-radius:15px 15px 0 0;
 }
 /* .first-news:first-child{
@@ -283,7 +337,7 @@ body{
 	cursor:pointer;
 	border-radius:15px 15px;
 	margin-top:50px;
-    background-color:rgba(127,127,127,0.05);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+  background-color:rgba(127,127,127,0.05);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
 }
 
 
@@ -296,21 +350,19 @@ body{
   text-align: justify;
 }
 
-.first-news .seemore{
-  margin-top:12px;
-}
-
-.first-news .seemore a{
+.first-news p a{
   text-decoration: none;
-  color: #000;
-  margin-left: 120px;
-  text-indent: 5px;
+  color: gray;
 }
 
-.first-news .seemore a:hover{
-  font-weight: 900;
-  color: #344072;
+.first-news pre{
+  text-align: right;
+  margin-top: 33px;
 }
+
+
+
+
 
 
 .first-news:hover{
@@ -318,11 +370,6 @@ body{
 	transform:translateX(5px);
 }
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 
 
 
@@ -334,8 +381,43 @@ body{
 
 .container-head h1{
   text-align: center;
-  margin:100px 0 40px 0;
+  margin:40px 0 40px 0;
+
+  position: relative;
 }
+
+.container-head h1::before{
+  content: '';
+  width: 1px;
+  height: 400px;
+
+  position: absolute;
+  top:-178px;
+  left: 380px;
+  bottom: 10px;
+
+  transform:rotate(90deg);
+  
+  background-color: #d2ad32;
+
+}
+
+.container-head h1::after{
+  content: '';
+  width: 1px;
+  height: 400px;
+
+  position: absolute;
+  top:-178px;
+  right: 380px;
+  bottom: 10px;
+
+  transform:rotate(90deg);
+  
+  background-color: #d2ad32;
+
+}
+
 
 /* .container h1{
 flex: 1;
@@ -351,8 +433,9 @@ font-size: 30px;
 .counters{
   width: 100%;
   height: 200px;
-  background-color: #96a2d4;
-    color:#fff;
+  background-color: #dbbd5a;
+  /* background-color: #ead89d; */
+    color:#000;
     padding: 20px 10px;
 }
 
@@ -397,7 +480,7 @@ font-size: 30px;
     width: 100%;
     height: 300px;
     margin-right: 10px;
-    background-color:#092b3a;
+    background:#d2ad32;
    
 }
 
@@ -406,10 +489,38 @@ font-size: 30px;
 
 .contact-us{
     width: 39%;
-    color: #fff;   
+    color: #000;   
+}
+
+.contact-div{
+  margin-left: 100px;
+}
+
+.contact-us .address{
+  margin-top: 50px;
+  /* font-size: 16px; */
+}
+
+.contact-us .address,.contact-us .contact-number{
+  margin-bottom: 20px;
+}
+.contact-us .address span{
+  margin-left: 80px;
+}
+
+.contact-us .address .break{
+  margin-left: 147px;
+}
+.contact-us .contact-number span{
+  margin-left: 23px;
+}
+
+.contact-us .contact-email span{
+  margin-left: 37px;
 }
 
 .contact-us h3{
+  margin-top: 20px;
   text-align: center;
 }
 .contact-us ul li a{
@@ -424,7 +535,6 @@ font-size: 30px;
 }
 
 .map iframe{
-  border-radius: 10px;
   width: 100%;
   height: 300px;
 }
@@ -432,7 +542,6 @@ font-size: 30px;
 .copyright {
   width: 100%;
   height: 50px;
-  border-top: 1px solid #fff;
   color: #fff;
   text-align: center;
    
@@ -440,6 +549,9 @@ font-size: 30px;
   line-height: 50px;
 }
 
+.icon{
+  margin-left: 30px;
+}
 .icon ul li{
     list-style-type: none;
 }

@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "../../../thirdweekproject"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Website"
+	}
+}
