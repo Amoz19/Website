@@ -17,17 +17,18 @@ body{
 	width:100%;
   height: 60px;
   margin: 0;
+
 	position:absolute;
-	/* z-index:2; */
-    display:flex;
+  display:flex;
 	justify-content:space-between;
 	position:fixed;
 	z-index:3;
 
   background-color:#FAFAFA;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 2px solid #d2ad32;
   opacity: 0.9;
-} 
+}
+
 .navbar img{
   margin-left: 50px;
   width: 5%;
@@ -143,7 +144,7 @@ body{
   width: 80px;
   height:80px;
   margin-top:90px;
-  margin-left: 70px;
+  margin-left: 150px;
 
 }
   
@@ -433,7 +434,7 @@ font-size: 30px;
 .counters{
   width: 100%;
   height: 200px;
-  background-color: #dbbd5a;
+  background-color: #d2ad32;
   /* background-color: #ead89d; */
     color:#000;
     padding: 20px 10px;
@@ -480,7 +481,7 @@ font-size: 30px;
     width: 100%;
     height: 300px;
     margin-right: 10px;
-    background:#d2ad32;
+    background:#FFF;
    
 }
 
@@ -541,12 +542,12 @@ font-size: 30px;
 
 .copyright {
   width: 100%;
-  height: 50px;
+  height: 10vh;
   color: #fff;
   text-align: center;
    
-  background-color:#092b3a;
-  line-height: 50px;
+  background-color:#d2ad32;
+  line-height: 10vh;
 }
 
 .icon{

@@ -1,0 +1,123 @@
+
+            body{
+                margin:0;
+                padding:0;
+            }
+			.main_about_us{
+				max-width:100%;
+				max-height:auto;
+			}
+            .main_about_us h3{
+                text-align: center;
+            }
+            .main_about_us .photo_text{
+                max-width:1365px;
+                max-height: 350px;
+				padding:5px 5px;
+                background-color: rgb(201, 202, 198);
+            }
+            .main_about_us .photo_text img{
+                width: 450px;
+                height: 295px;
+                vertical-align: top;
+                position: relative;
+                margin-top: 25px;
+                margin-left: 30px;
+                border-radius: 10px 10px;
+            }
+            
+            .photo_text .text p{
+                left: float;
+                position: relative;
+                max-width:800px;
+                height: 280px;
+                border: 1px solid #000000;
+                border-radius: 10px 10px;
+                border:none;
+                background-color: rgb(34, 70, 112);
+                color:aqua;
+                font-weight: 30px;
+                margin-top: -298px;
+                margin-left: 498px;
+                padding: 10px 10px;
+                
+            }
+            .photo_text .text p:hover{
+                box-shadow: -10px 10px 8px rgba(0,0,0,0.3);
+                cursor: pointer;
+                transition: 0.5s all;
+            }
+            .sayartaw_image{
+                max-width:100%;
+                height: 350px;
+                background-color: rgb(201, 202, 198); 
+				
+            }
+			
+			.mm{
+				
+                float:left;
+                max-width: 200px;
+                max-height:	200px;
+                margin-left: 40px;
+				line-height:0.5;
+                cursor: pointer;
+                margin-top:20px;
+                
+            }
+			
+            .mm img{
+                max-width:150px;
+                max-height: 200px;
+                border-radius:50%;
+            }
+            .mm h4{
+				text-align:center;
+			}
+            .mm p{
+                text-align: center;
+            }
+			
+            .current_ven{
+                max-width:100%;
+                height: 350px;
+                background-color: rgb(201, 202, 198);
+            }
+            .current_ven .dd{
+                width: 500px;
+                height: 350px;
+                background: skyblue;
+                clip-path:ellipse(100% 90% at left);
+                
+               
+
+            }
+            .dd img{
+                box-shadow: -10px 10px 8px rgba(0,0,0,0.3);
+                margin-left: 100px;
+                margin-top:20px;
+                max-width: 300px;
+                max-height: 250px;
+                
+            }
+            .dd p{
+                margin-left: 160px ;
+				line-height:0.5;
+                color:#fff;
+                
+            }
+            
+            .current_ven .text_for_ven{
+                width: 45%;
+                height: 300px;
+                margin-left: 530px;
+                color:#000;
+                position:relative;
+               
+                margin-top:-300px;
+
+            }
+            .clr{
+                clear: both;
+            }
+      
