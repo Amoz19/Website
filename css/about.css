@@ -23,10 +23,10 @@
               height: 60px;
               margin: 0;
             
-                position:absolute;
+                /* position:absolute; */
               display:flex;
                 justify-content:space-between;
-                position:fixed;
+                /* position:fixed; */
                 z-index:3;
             
               background-color:#FAFAFA;
@@ -113,32 +113,32 @@
             .main_about_us .photo_text{
                 max-width:1365px;
                 max-height: 350px;
+                height: 380px;
 				padding:5px 5px;
                 background-color: rgb(201, 202, 198);
+                display: flex;
             }
             .main_about_us .photo_text img{
                 width: 450px;
-                height: 295px;
+                height: 300px;
                 vertical-align: top;
-                position: relative;
                 margin-top: 25px;
                 margin-left: 30px;
                 border-radius: 10px 10px;
             }
             
             .photo_text .text p{
-                left: float;
-                position: relative;
+                /* left: float; */
                 max-width:800px;
-                height: 280px;
+                height: 300px;
                 border: 1px solid #000000;
                 border-radius: 10px 10px;
                 border:none;
                 background-color: rgb(34, 70, 112);
                 color:aqua;
                 font-weight: 30px;
-                margin-top: -298px;
-                margin-left: 498px;
+                margin-top: 28px;
+                margin-left: 50px;
                 padding: 10px 10px;
                 
             }
@@ -172,9 +172,11 @@
                 border-radius:50%;
             }
             .mm h4{
+                line-height: 2;
 				text-align:center;
 			}
             .mm p{
+                line-height: 5;
                 text-align: center;
             }
 			
@@ -202,7 +204,7 @@
             }
             .dd p{
                 margin-left: 160px ;
-				line-height:0.5;
+				line-height:2;
                 color:#fff;
                 
             }
@@ -219,5 +221,86 @@
             }
             .clr{
                 clear: both;
+            }
+
+            .footer{
+                display: flex;
+                width: 100%;
+                height: 300px;
+                margin-right: 10px;
+                background:#FFF;
+               
+            }
+            
+              
+            
+            
+            .contact-us{
+                width: 39%;
+                color: #000;   
+            }
+            
+            .contact-div{
+              margin-left: 100px;
+            }
+            
+            .contact-us .address{
+              margin-top: 50px;
+              /* font-size: 16px; */
+            }
+            
+            .contact-us .address,.contact-us .contact-number{
+              margin-bottom: 20px;
+            }
+            .contact-us .address span{
+              margin-left: 80px;
+            }
+            
+            .contact-us .address .break{
+              margin-left: 147px;
+            }
+            .contact-us .contact-number span{
+              margin-left: 23px;
+            }
+            
+            .contact-us .contact-email span{
+              margin-left: 37px;
+            }
+            
+            .contact-us h3{
+              margin-top: 20px;
+              text-align: center;
+            }
+            .contact-us ul li a{
+              float: left;;
+              margin:60px 0 30px 50px;
+              cursor: pointer;
+            }
+            
+            .map{
+                width: 35%;
+                margin-right: 10px;
+            }
+            
+            .map iframe{
+              width: 100%;
+              height: 300px;
+            }
+            
+            .copyright {
+              width: 100%;
+              height: 10vh;
+              color: #fff;
+              text-align: center;
+               
+              background-color:#d2ad32;
+              line-height: 10vh;
+            }
+            
+            .icon{
+              margin-left: 30px;
+            }
+            .icon ul li{
+                list-style-type: none;
             }
       
