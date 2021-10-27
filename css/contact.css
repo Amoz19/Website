@@ -1,6 +1,111 @@
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+body{
+  margin:0;
+  padding:0;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+  
+  margin:0 auto;
+  
+}
+.navbar{
+  width:100%;
+height: 60px;
+margin: 0;
+
+  /* position:absolute; */
+display:flex;
+  justify-content:space-between;
+  /* position:fixed; */
+  z-index:3;
+
+background-color:#FAFAFA;
+border-bottom: 2px solid #d2ad32;
+opacity: 0.9;
+}
+
+.navbar img{
+margin-left: 50px;
+width: 5%;
+position: relative;
+}
+
+.top-menu .navbar h1::before{
+content: '';
+position: absolute;
+top:10px;
+left:-20px;
+right: 0;
+
+width:3px;
+height: 40px;
+background-color: #e3e3e4;
+
+}
+
+
+.navbar h1{
+width: 40%;
+margin-left: 40px;
+line-height: 50px;
+color:#000;
+position: relative;
+}
+.navbar ul{
+width: 58%;
+
+  line-height: 60px;
+}
+
+.navbar ul li{
+  display:inline;
+}
+/* .navbar ul li:first-child{
+margin-left: 250px;
+} */
+.navbar ul li:last-child{
+  margin-right:100px;
+}
+
+.navbar ul li a{
+  text-decoration:none;
+  color:#000;
+  font-size:20px;
+  font-weight:900;
+padding: 5px 0 1px 0;
+margin: 0 2px 0 20px; 
+}
+
+.navbar ul li a:hover,.navbar ul li .for-active{
+  color:#d2ad32;
+}
+
+/* .navbar ul li select{
+  border:none;
+  background:transparent;
+  color:#000;
+  font-size:14px;
+  font-weight:700;
+} */
+
+/*Fix Navbar*/
+
+.navbar.fix {
+background:#FAFAFA;
+}
+
 .main-contact{
   width:100%;
 	height:100vh;

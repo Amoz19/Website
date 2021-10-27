@@ -7,7 +7,6 @@
         <title>Web Page</title>
         <meta content="" name="description">
         <meta content="" name="keywords">
-        <link rel="stylesheet" href="css/style.css" type="text/css">
         <link rel="stylesheet" href="css/contact.css" type="text/css">
         <link href="libs/icofont/icofont.min.css" rel="stylesheet">
         <link href="libs/boxicons/css/boxicons.min.css" rel="stylesheet">
@@ -27,7 +26,7 @@
                     <li><a href="aboutus.html">About us</a></li>
                     <li><a href="news.html">News&Events</a></li>
                     <li><a href="activity.html">Activitys</a></li>
-                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a class="for-active" href="contact.html">Contact us</a></li>
                 </ul>
             </nav>
     
@@ -36,7 +35,7 @@
       
     <!-- Activity Section-->
     <div class="main-contact">
-      <h1>Contact Us</h1>
+      <!-- <h1>Contact Us</h1> -->
     </div>
         <div class="contact">
           <div class="contact1">
@@ -88,19 +87,19 @@
             <div class="col-lg-5 col-md-12" data-aos="fade-up" data-aos-delay="300">
               <form action="forms/contact.php" method="post" role="form" class="php-email-form">
                 <div class="form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" autocomplete="off" required/>
                   <div class="validate"></div>
                 </div>
                 <div class="form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" autocomplete="off" required/>
                   <div class="validate"></div>
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" autocomplete="off" required/>
                   <div class="validate"></div>
                 </div>
                 <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message" required></textarea>
                   <div class="validate"></div>
                 </div>
                 <div class="mb-3">

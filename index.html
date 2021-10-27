@@ -19,7 +19,7 @@
             <img src="img/start_logo.png" alt=""/>
             <h1>Ramanyanikaya</h1>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a class="for-active" href="index.html">Home</a></li>
                 <li><a href="aboutus.html">About us</a></li>
                 <li><a href="news.html">News&Events</a></li>
                 <li><a href="activity.html">Activitys</a></li>
@@ -45,12 +45,12 @@
     <!--<div class="slider"></div>-->
    
     <div class="the-new">
-        <h1> Information</h1>
+        <h1>News</h1>
     <div class="first-news">
        
             <img src="img/course3.jpg" alt="first_news"/>
             <h2>Computer Secience</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus.<a href="#">...see more</i></a></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus.<a href="news.html#for-cs">...see more</i></a></p>
             <pre>11.10.2021</pre>
             <!-- <div class="seemore"><span>9.10.2021</span>						
             </div> -->
@@ -59,7 +59,7 @@
         
             <img src="img/course1.jpeg" alt="second_news"/>
             <h2>English</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus.<a href="#">...see more</i></a></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus.<a href="news.html#for-eng">...see more</i></a></p>
             <pre>11.10.2021</pre>
             <!-- <div class="seemore"><span>9.10.2021</span>						
             </div> -->
@@ -68,7 +68,7 @@
         
             <img src="img/course2.jpg" alt="third_news"/>	
             <h2>Mon Special class</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus.<a href="#">...see more</i></a></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus.<a href="news.html#for-mon">...see more</i></a></p>
             <pre>11.10.2021</pre>
             <!-- <div class="seemore"><span>9.10.2021</span>						
                 
@@ -83,6 +83,53 @@
             </p>
         </a>
     </div> -->
+</div>
+<div class="main-event">
+<!--events section-->
+
+<div class="container-events">
+   
+</div>
+<div class="events">
+	<div class="event">
+        <div>
+            <img src="img/net (4).jpg" alt="event_photo" id="slide"/>
+        </div>
+        <button class="btn" onclick="mySlide('prev')">Prev</button>
+			<button class="btn" onclick="mySlide('next')">Next</button>
+    </div>
+</div>
+<!-- end events section-->
+<div class="main">
+    <h1>Upcoming Events</h1>
+      <a href="news.html#event-page"><div class="main-left-right">
+        <div class="left">
+          <button>10 NOV</button>
+        </div>
+        <div class="right">
+          <p>October 10th,2021</p>
+          <p>Book Showcase</p>
+        </div>
+      </div>
+      <div class="main-left-right">
+        <div class="left">
+          <button>15 OCT</button>
+        </div>
+        <div class="right">
+          <p>October 15th,2021</p>
+          <p>Book Review</p>
+        </div>
+      </div>
+      <div class="main-left-right">
+        <div class="left">
+          <button>31 OCT</button>
+        </div>
+        <div class="right">
+          <p>October 31th,2021</p>
+          <p>Hollween</p>
+        </div>
+      </div></a>
+</div>
 </div>
 
        
@@ -171,6 +218,7 @@
           
    
     <script src="js/ani.js"></script>
+    <script src="js/events.js"></script>
     <!-- <script src="js/nav.js"></script> -->
 </body>
 </html>

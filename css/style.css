@@ -81,8 +81,8 @@ body{
   margin: 0 2px 0 20px; 
 }
 
-.navbar ul li a:hover/*,.navbar ul li select:hover*/{
-	border-bottom-style: solid;
+.navbar ul li a:hover,.navbar ul li .for-active/*,.navbar ul li select:hover*/{
+	color:#d2ad32;
 }
 
 /* .navbar ul li select{
@@ -257,7 +257,7 @@ body{
    
     margin: 30px auto;
     animation-name: ani;
-    animation-duration: 5s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
 }
 
@@ -359,6 +359,7 @@ body{
 .first-news pre{
   text-align: right;
   margin-top: 33px;
+  font-size: 13px;
 }
 
 
@@ -369,6 +370,82 @@ body{
 .first-news:hover{
 	box-shadow:6px 6px 20px 10px #5f4B8BFF;
 	transform:translateX(5px);
+}
+
+.main-event{
+  display: flex;
+
+  margin-top: 50px;
+}
+
+.event{
+  margin-left:100px;
+}
+
+.event .btn{
+  margin:10px 10px 0 0  ;
+  padding: 5px 35px;
+  border: 1px solid #000;
+}
+
+.event .btn:hover{
+  background-color: #000;
+  color: #fff;
+}
+
+.event img{
+  width:600px;
+  height: 360px;
+}
+
+.main{
+  width:250px;
+  margin-left: 50px;
+}
+
+.main a{
+  text-decoration: none;
+  color: #000;
+}
+
+.main h1{
+  width:300px;
+  margin:0 0 10px 0;
+  border-bottom:1px solid #000;
+}
+
+
+.main .main-left-right .left{
+   width:100px;
+  height:100px;
+}
+
+
+
+.main .main-left-right .left button{
+  font-family: inherit;
+  font-size: 16px;
+  border: none;
+  background:#000;
+  color:#fff;
+  padding:29px;
+
+  
+
+}
+
+.main .main-left-right .right p{
+  margin-top: 15px;
+}
+
+.main-left-right{
+  width: 300px;
+  height:94px;
+  margin-bottom: 15px;
+  background-color: rgba(0,0,0,0.3);
+  box-shadow: 0 10px 16px -8px rgba(0,0,0,0.4);
+
+  display:flex;
 }
 
 

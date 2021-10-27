@@ -86,8 +86,8 @@
               margin: 0 2px 0 20px; 
             }
             
-            .navbar ul li a:hover/*,.navbar ul li select:hover*/{
-                border-bottom-style: solid;
+            .navbar ul li a:hover,.navbar ul li .for-active{
+              color:#d2ad32;
             }
             
             /* .navbar ul li select{
