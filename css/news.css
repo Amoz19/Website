@@ -158,7 +158,7 @@ border-bottom: solid 3px var(--golden);
 
 .details-container{
   max-width: 1200px;
-  height: 300px;
+  height: 400px;
 
   display: flex;
   flex-wrap: wrap;
@@ -183,7 +183,7 @@ border-bottom: solid 3px var(--golden);
 
 .for-details{
   width:45%;
-  height:100%;
+  height:400px;
   padding: 0 30px;
   color: #000;
   background-color:#999;
@@ -390,22 +390,7 @@ border-bottom: solid 3px var(--golden);
   }  
 }
 
-@media(max-width:550px){
-  .event{
-      flex-direction: column;
-  }
-  .event .event-left{
-      padding:0;
-      border-radius: 8px 8px 0 0;
-  }
-  .event .event-left .event-date .date, .event .event-left .event-date .month{
-      display: inline-block;
-      font-size:24px;
-  }
-  .event .event-left .event-date{
-      padding:10px 0;
-  }
-}
+
 
 @media(max-width:550px){
   .event{
@@ -436,8 +421,8 @@ border-bottom: solid 3px var(--golden);
 
   .for-details{
     margin: 0 auto;
-    height: 300px;
-    width: 90%;
+    height: 450px;
+    width: 80%;
   }
 
   .facebook-live{
