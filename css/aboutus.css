@@ -105,7 +105,7 @@
             }
 			.main_about_us{
 				max-width:100%;
-				max-height:auto;
+				/* max-height:auto; */
 			}
             .main_about_us h3{
                 text-align: center;

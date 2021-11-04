@@ -15,6 +15,7 @@
         
     </head>
     <body>
+    <div class="main-container">
     <!-- nav bar start -->
     <div class="top-menu">
         <div class="top-left-menu">
@@ -44,8 +45,8 @@
         </div>
     </div>
     <!-- nav bar end -->
-    <div class="main-activity">
-    </div>
+    <!-- <div class="main-activity">
+    </div> -->
     <div id="container">
       <div class="list">
           <input type="button" value=" All " onclick="chng()" />   
@@ -53,18 +54,14 @@
           <input type="button" value=" English " onclick="chng2()" /> 
           <input type="button" value=" Other " onclick="chng3()" /> 
       </div>
-  <div id="img1" class="ch-img">
-      
-      <div >
+      <div class="activity-image-container">
+      <div id="img1" class="ch-img">
+    
       <img src="img/net (1).jpg"   >
       <img src="img/net (2).jpg"  class="cc" height="200" width="250">
       <img src="img/net (3).jpg"   class="cc" height="200" width="250">
-      </div>
   </div>
       <div id="img2" class="ch-img">
-          <div>
-           
-          </div>
           <div >
           <img src="img/net (4).jpg" id="rr"  class="cc" height="200" width="250">
           <img src="img/net (5).jpg" id="rr"  class="cc" height="200" width="250">
@@ -73,15 +70,14 @@
       </div>
           <div id="img3" class="ch-img">
               <div>
-
-              </div>
-              <div>
               <img src="img/net (7).jpg" id="rr"  class="cc" height="200" width="250">
               <img src="img/net (8).jpg" id="rr"  class="cc" height="200" width="250">
               <img src="img/net (9).jpg" id="rr"  class="cc" height="200" width="250">
               </div>
           </div>
-              </div>
+          </div>
+    </div>
+</div>
 
     
        <!-- footer start -->
@@ -125,10 +121,12 @@
                 width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </div>
+
     <!-- footer end -->
     <div class="copyright">
             <p>&copy; Copyright Ramanyanikarya 2021 All Rights Reserved.</p>
     </div>
+
        
         <script src="js/ani.js"></script>
         <script src="js/nav.js"></script>
@@ -136,7 +134,6 @@
         <script src="js/script.js"></script>
         <script src="js/main.js"></script> 
         <script src="isotope-layout/isotope.pkgd.min.js"></script>
-       -->
        <script src=js/activity.js></script>
     </body>
     </html>
