@@ -761,6 +761,10 @@ background-color:#d2ad32;
 line-height: 10vh;
 }
 
+.copyright p{
+  margin: 0;
+}
+
 .icon ul li{
   list-style-type: none;
 }
