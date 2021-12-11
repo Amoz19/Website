@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Responsive image text</title>
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                background: #262626;
+            }
+            section{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                height: 400px;
+                width: 100%;
+                background: gray; 
+                box-shadow: 0 25px 30px rgba(0,0,0,0.5);
+                display: flex;
+            }
+            .imgBox{
+                width: 40%;
+                height: 100%;
+                background: #f00;
+                box-sizing: border-box;
+                /* border-right: 100px solid ; */
+                /* border-bottom: 400px solid transparent; */
+                background-image: url(current-ven.jpg);
+                /* background-position: ; */               
+            }
+            .swiper{
+                /* width: 100%; */
+                width: 60%;
+                padding-top: 50px;
+                padding-bottom: 50px;
+            }
+
+            .swiper-slide{
+                background-position: center;
+                background-size: cover;
+                width: 320px;
+                /* height: 300px; */
+                
+                box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+                filter:blur(4px);
+                background: #d1ebff;
+                border-radius: 10px;
+
+            }
+            .swiper-slide-active{
+                filter: blur(0px);
+                background: #fff;
+            }
+            .testimonialBox{
+                position: relative;
+                width: 100%;
+                padding: 40px;
+                padding-top: 70px;
+                color: #999;
+            }
+            .testimonialBox .quote{
+                position: absolute;
+                top: 20px;
+                right: 100px;
+                opacity: 0.2;
+            }
+            .testimonialBox .content p{
+                width: 80%;
+            }
+            .testimonialBox .details{
+                display: flex;
+                align-items: center;
+                margin-top: 20px;
+            }
+            .testimonialBox .details .imgBx{
+                position: relative;
+                width:60px;
+                height: 60px;
+                border-radius: 50%;
+                overflow: hidden;
+                margin-right: 10px;
+            }
+            .testimonialBox .details .imgBx img{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .testimonialBox .details h3{
+                font-size: 16px;
+                font-weight: 400;
+                letter-spacing: 1px;
+                color: #2196f3;
+                line-height: 1.1em;
+            }
+            .testimonialBox .details h3 span{
+                font-size: 12px;
+                color: #666;
+            }
+            .swiper-3d .swiper-slide-shawdow-left,.swiper-3d .swiper-slide-shawdow-right{
+                background-image: none;
+            }
+            /* .content{
+                width: calc(50% - 50px);
+                height: 100%;
+                background: #ff0;
+                box-sizing: border-box;
+                padding: 30px 50px;
+                font-family: sans-serif;
+                color: #fff;
+            } */
+           
+        </style>
+    </head>
+    <body>
+        <div class="section-container">
+            <div class="columns image" style="background-image: url('slider4.png');">
+                &nbsp;
+            </div>
+            <div class="columns content">
+                <div class="content-container">
+                    <h5>Why do we use it?</h5>
+                    <p>It is a long established fact that a reader will be distracted by the readable 
+                        content of a page when looking at its layout. The point of using Lorem Ipsum 
+                        is that it has a more-or-less normal distribution of letters, as opposed to using 
+                        'Content here, content here', making it look like readable English. Many desktop 
+                        publishing packages and web page editors now use Lorem Ipsum as their default model 
+                        text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. 
+                        Various versions have evolved over the years, sometimes by accident, sometimes on purpose 
+                        (injected humour and the like).</p>
+                        <p>It is a long established fact that a reader will be distracted by the readable 
+                            content of a page when looking at its layout. The point of using Lorem Ipsum 
+                            is that it has a more-or-less normal distribution of letters, as opposed to using 
+                            'Content here, content here', making it look like readable English. Many desktop 
+                            publishing packages and web page editors now use Lorem Ipsum as their default model 
+                            text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. 
+                            Various versions have evolved over the years, sometimes by accident, sometimes on purpose 
+                            (injected humour and the like).</p>    
+                </div>
+            </div>          
+        </div>
+        <div class="container">
+            <div class="box">
+                <img src="first_ven.jpg" alt="">
+                <h4>Name</h4>
+				<p>2000 - 2021</p>
+            </div>
+            <div class="box">
+                <img src="second_ven.jpg" alt="">
+                <h4>Name</h4>
+				<p>2000 - 2021</p>
+            </div>
+            <div class="box">
+                <img src="third_ven.jpg" alt="">
+                <h4>Name</h4>
+				<p>2000 - 2021</p>
+            </div>
+            <div class="box">
+                <img src="fouth_ven.jpg" alt="">
+                <h4>Name</h4>
+				<p>2000 - 2021</p>
+            </div>
+            <div class="box">
+                <img src="fith_ven.jpg" alt="">
+                <h4>Name</h4>
+				<p>2000 - 2021</p>
+            </div>
+            
+        </div>
+
+        <!-- <section>            
+            <div class="imgBox"></div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="testimonialBox">
+                        <img src="qoute.png" alt="" class="quote">
+                        <div class="content">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Odit neque rerum quis dolore, adipisci quia reprehenderit eaque.
+                                 Sed ab ipsam perferendis, cum corporis, aperiam accusantium hic 
+                                 reiciendis commodi exercitationem nihil?
+                            </p>
+                            <div class="details">
+                                <div class="imgBx">
+                                    <img src="current-ven.jpg" alt="">
+                                </div>
+                                <h3>Nai Kosalia<br>
+                                    <span>
+                                        M.A B.A
+                                    </span>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="testimonialBox">
+                        <img src="qoute.png" alt="" class="quote">
+                        <div class="content">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Odit neque rerum quis dolore, adipisci quia reprehenderit eaque.
+                                 Sed ab ipsam perferendis, cum corporis, aperiam accusantium hic 
+                                 reiciendis commodi exercitationem nihil?
+                            </p>
+                            <div class="details">
+                                <div class="imgBx">
+                                    <img src="current-ven.jpg" alt="">
+                                </div>
+                                <h3>Someone Famous<br>
+                                    <span>
+                                        Creteive Designer
+                                    </span>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="testimonialBox">
+                        <img src="qoute.png" alt="" class="quote">
+                        <div class="content">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Odit neque rerum quis dolore, adipisci quia reprehenderit eaque.
+                                 Sed ab ipsam perferendis, cum corporis, aperiam accusantium hic 
+                                 reiciendis commodi exercitationem nihil?
+                            </p>
+                            <div class="details">
+                                <div class="imgBx">
+                                    <img src="current-ven.jpg" alt="">
+                                </div>
+                                <h3>Someone Famous<br>
+                                    <span>
+                                        Creteive Designer
+                                    </span>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  
+                </div>  
+            </div>
+        </section> -->
+       
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+              effect: "coverflow",
+              grabCursor: true,
+              centeredSlides: true,
+              slidesPerView: "auto",
+              coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 100,
+                modifier: 2,
+                slideShadows: true,
+              },
+             loop:true,
+            });
+          </script>
+    </body>
+</html>

@@ -1,114 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" name="viewport">
-        <title>Web Page</title>
-        <meta content="" name="description">
-        <meta content="" name="keywords">
-        <link rel="stylesheet" href="css/contact.css" type="text/css">
-        <link href="libs/icofont/icofont.min.css" rel="stylesheet">
-        <link href="libs/remixicon/remixicon.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="js/main.js"></script> 
-    </head>
-    <body>
-    <!-- nav bar start -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page</title>
+    <link rel="stylesheet" href="cont1.css" type="text/css">
+    <!--<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="libs/fontawesomepro/css/all.min.css" rel="stylesheet" type="text/css" />
+    
+    <script src="js/main.js"></script> 
+</head>
+
+<body>
+    <!-- Header Section-->
+    <header >
     <div class="top-menu">
-      <div class="top-left-menu">
-          <img src="img/start_logo.png" alt=""/>
-          <h2>Ramanyanikaya</h2>
-      </div>
-      <div class="top-right-menu">
-          <a href="index.html">Home</a>
-          <a href="aboutus.html">About us</a>
-          <a href="news.html">News&Events</a>
-          <a href="activity.html">Activitys</a>
-          <a class="for-active" href="contact.html">Contact us</a>
-      </div>
-      <div class="hamburgerLine">
-              <div class="line line1"></div>
-              <div class="line line2"></div>
-              <div class="line line3"></div>
-      </div>
-      <div class="overlayMenu">
-          <ul>
-              <li><a  class="for-a-menu" class="for-active" href="index.html">Home</a></li>
-              <li><a class="for-a-menu" href="aboutus.html">About us</a></li>
-              <li><a class="for-a-menu" href="news.html" >News&Events</a></li>
-              <li><a class="for-a-menu" href="activity.html" >Activitys</a></li>
-              <li><a class="for-a-menu" href="contact.html">Contact us</a></li>
-          </ul>
-      </div>
-  </div>
-  <!-- nav bar end -->
-    <div class="main-contact">
-      <!-- <h1>Contact Us</h1> -->
+        <nav class="navbar" id="navbar">
+            <img src="img/start_logo.png" alt=""/>
+            <h1>Ramanyanikaya</h1>
+            <ul>
+                <li><a  class="nav-active" href="index.html">Home</a></li>
+                <li><a  href="aboutus.html">About us</a></li>
+                <li><a  href="news.html">News&Events</a></li>
+                <li><a  href="activity.html">Activitys</a></li>
+                <li><a  href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+
     </div>
-        <div class="contact">
-          <div class="contact1">
-             <h3>Contact Us</h3>
-          </div>
-       <!-- ======= Contact Section ======= -->
-   <section id="contact" class="contact">
+    </header>
+    
+    
+  
+      <!-- ======= Contact Section ======= -->
+      <section class="breadcrumbs">
         <div class="container">
   
-         <!-- <div class="section-title" data-aos="fade-up">
+          <div class="d-flex">
             <h2>Contact Us</h2>
-          </div>-->
+            
+          </div>
+  
+        </div>
+      </section>
+    <section class="contact" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+      <!--<h3>Contact Us</h3>-->
+        <div class="container">
   
           <div class="row">
   
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-              <div class="contact-about">
-                <h3>Ramanyanikaya</h3>
-                <p>Cras fermentum odio eu feugiat. Justo eget magna fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
-                <div class="social-links">
-                  <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-                  <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
-                  <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
-                  <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
+            <div class="col-lg-6">
+  
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="info-box">
+                    <i class="fal fa-map-marker-alt"></i>
+                    <h3>Our Address</h3>
+                    <p>Razaderitt Street,Kwan Totkano,desa takotkamak</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="info-box">
+                    <i class="fal fa-envelope"></i>
+                    <h3>Email Us</h3>
+                    <p>info@example.com<br>contact@example.com</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="info-box">
+                    <i class="fal fa-phone-alt"></i>
+                    <h3>Call Us</h3>
+                    <p>+95 971 111 111<br>+95 770 000 000</p>
+                  </div>
                 </div>
               </div>
+  
             </div>
   
-            <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
-              <div class="info">
-                <div>
-                  <i class="ri-map-pin-line"></i>
-                  <p>Razaderitt Street<br>Kwan Totkano,desa takotkamak</p>
-                </div>
-  
-                <div>
-                  <i class="ri-mail-send-line"></i>
-                  <p>info@example.com</p>
-                </div>
-  
-                <div>
-                  <i class="ri-phone-line"></i>
-                  <p>+1 5589 55488 55s</p>
-                </div>
-  
-              </div>
-            </div>
-  
-            <div class="col-lg-5 col-md-12" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-lg-6">
               <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                
+                <div class="form-row">
+                  <div class="col-md-6 form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validate"></div>
+                  </div>
+                  
+                  <div class="col-md-6 form-group">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                    <div class="validate"></div>
+                  </div>
+                </div>
+  
                 <div class="form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" autocomplete="off" required/>
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                   <div class="validate"></div>
                 </div>
                 <div class="form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" autocomplete="off" required/>
-                  <div class="validate"></div>
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" autocomplete="off" required/>
-                  <div class="validate"></div>
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message" required></textarea>
+                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
                   <div class="validate"></div>
                 </div>
                 <div class="mb-3">
@@ -124,59 +115,61 @@
   
         </div>
       </section><!-- End Contact Section -->
-      
-    </div>
     
+    <!--footer-->
+    <div class="footer">
+      
+        <div class="facebook-live">
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftrendmusicjustforyou%2F&tabs=timeline&width=400px&height=297px&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId" width="400px" height="320px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+        <div class="contact-us">
+            <h3>Contact us</h3>
+            <div class="contact-div">
+                <div class="address">
+                <label>Address|</label>
+                <span>
+                    Rajadhiraj Road,KwanTokano <span class="break">Teasa Takohmine</span>
+                </span>
+                </div>
+                <div class="contact-number">
+                    <label>Contact number|</label>
+                    <span>
+                        09255882712
+                    </span>
+                </div>
+                <div class="contact-email">
+                    <label>Contact Email|</label>
+                    <span>
+                        naikosalla@gmail.com
+                    </span>
+                </div>
+            </div>
+            <div class="icon">
+                
+                <ul>
+                    <li><a href="https://web.facebook.com/trendmusicjustforyou"><i class="fab fa-facebook" style="font-size:30px"></i></a></li>
+                    <li><a href="https://www.youtube.com/c/AmozsSharing2002"><i class="fab fa-youtube" style="font-size:30px"></i></a></li>
+                    <li><a ><i class="fab fa-instagram" style="font-size:30px"></i></a></li>
+                    <li><a href="tel:09255882712"><i class="fas fa-phone-alt" style="font-size:30px"></i></a></li>
+                    <li><a href="mailto:aungmon10co@gmail.com"><i class="far fa-envelope" style="font-size:30px"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1697.9254539606734!2d97.49376796798802!3d16.454254731385735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c2a1f23308d949%3A0x2499a70584e64a3d!2z4YCY4YCs4YCQ4YCt4YCv4YCA4YC6IOGAgOGAveGArOGAlOGAuuGAkOGAneGAuuGAgOGBnuGAtA!5e0!3m2!1sen!2sfr!4v1632717627826!5m2!1sen!2sfr"
+                width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+        <!-- <div class="clr"></div> -->
+            <div class="copyright">
+            &copy; Copyright Ramanyanikarya 2021 All Rights Reserved.<br>
+            </div>
+          
    
-        <!-- footer start -->
-        <div class="footer">
-          <div class="facebook-live">
-              <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftrendmusicjustforyou%2F&tabs=timeline&width=400px&height=297px&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId" width="350px" height="320px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-          </div>
-          <div class="contact">
-              <h3>Contact us</h3>
-              <div class="contact-div">
-                  <div class="address">
-                      <label>Address|</label>
-                      <span>
-                          Rajadhiraj Road,KwanTokano <span class="break">Teasa Takohmine</span>
-                      </span>
-                  </div>
-                  <div class="contact-number">
-                      <label>Contact number|</label>
-                      <span>
-                          09255882712
-                      </span>
-                  </div>
-                  <div class="contact-email">
-                      <label>Contact Email|</label>
-                      <span>
-                          naikosalla@gmail.com
-                      </span>
-                  </div>
-              </div>
-              <div class="icon"> 
-                      <a href="https://web.facebook.com/trendmusicjustforyou"><i class="fab fa-facebook" style="font-size:30px"></i></a></li>
-                      <a href="https://www.youtube.com/c/AmozsSharing2002"><i class="fab fa-youtube" style="font-size:30px"></i></a></li>
-                      <a ><i class="fab fa-instagram" style="font-size:30px"></i></a></li>
-                      <a href="tel:09255882712"><i class="fas fa-phone-alt" style="font-size:30px"></i></a></li>
-                      <a href="mailto:aungmon10co@gmail.com"><i class="far fa-envelope" style="font-size:30px"></i></a></i>
-              </div>
-          </div>
-          <div class="map">
-              <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1697.9254539606734!2d97.49376796798802!3d16.454254731385735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c2a1f23308d949%3A0x2499a70584e64a3d!2z4YCY4YCs4YCQ4YCt4YCv4YCA4YC6IOGAgOGAveGArOGAlOGAuuGAkOGAneGAuuGAgOGBnuGAtA!5e0!3m2!1sen!2sfr!4v1632717627826!5m2!1sen!2sfr"
-                  width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          </div>
-      </div>
-      <!-- footer end -->
-      <div class="copyright">
-              <p>&copy; Copyright Ramanyanikarya 2021 All Rights Reserved.</p>
-      </div>
-       
-        <script src="js/ani.js"></script>
-        <script src="js/nav.js"></script>
-        <script src="php-email-form/validate.js"></script>
-        <script src="js/script.js"></script>
-    </body>
-    </html>
+  
+    <script src="php-email-form/validate.js"></script>
+    <script src="js/main.js"></script>
+    <!-- <script src="js/nav.js"></script> -->
+</body>
+</html>
