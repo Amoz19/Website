@@ -1,5 +1,5 @@
 :root{
-  --golden:#d2ad32;
+  --golden:#ffd615;
 }
 
 html,body{
@@ -118,11 +118,11 @@ transition: all 0.5s ease;
 display: block;
 }
 
-ul{
+.overlayMenuShow ul{
   padding: 0;
 }
 
-li{
+.overlayMenuShow li{
 width: 100%;
 margin-bottom: 10px;
 padding:10px;
@@ -136,21 +136,20 @@ transition: tranform 3s ease;
 transform: translateY(-10px);
 }
 
-li a{
+.overlayMenuShow li a{
 text-decoration: none;
 color: #000;
 font-weight: 900;
 font-size: 20px;
 }
 
-li a:hover{
+.overlayMenuShow li a:hover{
 border-bottom: solid 3px var(--golden);
 }
 
-.for-active{
+.top-right-menu .for-active{
   color: var(--golden);
 }
-/* menu end */
 
 
 
@@ -227,10 +226,45 @@ border-bottom: solid 3px var(--golden);
   display: flex;
 
   justify-content:center;
+  margin-top: 5%;
   /*align-items: center;*/
   /*flex-direction: column;*/
   flex-wrap: wrap;
 }
+
+#container ul{ 
+  width: 40%;
+  display: flex;
+  justify-content: space-between; 
+  margin: auto;
+}
+ ul{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+} 
+ul li{
+  list-style: none;
+}
+ul li a{
+  position: relative;
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #262626;
+  font-weight: bold;
+}
+ul li.active a{
+  background: #262626;
+  color: gold;
+}
+
+
 
 
 /* footer start */

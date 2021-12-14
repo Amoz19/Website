@@ -1,5 +1,5 @@
 :root{
-  --golden:#d2ad32;
+  --golden:#ffd615;
 }
 
 html,body{
@@ -147,10 +147,9 @@ li a:hover{
 border-bottom: solid 3px var(--golden);
 }
 
-.for-active{
+.top-right-menu .for-active{
   color: var(--golden);
 }
-/* menu end */
 
 .top-menu + h2{
   text-align: center;

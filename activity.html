@@ -16,68 +16,84 @@
     </head>
     <body>
     <div class="main-container">
-    <!-- nav bar start -->
-    <div class="top-menu">
-        <div class="top-left-menu">
-            <img src="img/start_logo.png" alt=""/>
-            <h2>Ramanyanikaya</h2>
-        </div>
-        <div class="top-right-menu">
-            <a class="for-active" href="index.html">Home</a>
-            <a href="aboutus.html">About us</a>
-            <a href="news.html">News&Events</a>
-            <a href="activity.html">Activitys</a>
-            <a href="contact.html">Contact us</a>
-        </div>
-        <div class="hamburgerLine">
+        <!-- nav bar start -->
+        <div class="top-menu">
+            <div class="top-left-menu">
+                <img src="img/start_logo.png" alt=""/>
+                <h2>Ramanyanikaya</h2>
+            </div>
+            <div class="top-right-menu">
+                <a href="index.html">Home</a>
+                <a href="aboutus.html">About us</a>
+                <a href="news.html">News&Events</a>
+                <a class="for-active" href="activity.html">Activitys</a>
+                <a href="contactus.html">Contact us</a>
+            </div>
+            <div class="hamburgerLine">
                 <div class="line line1"></div>
                 <div class="line line2"></div>
                 <div class="line line3"></div>
+            </div>
+            <div class="overlayMenu">
+                <ul>
+                    <li><a class="for-a-menu" class="for-active" href="index.html">Home</a></li>
+                    <li><a class="for-a-menu" href="aboutus.html">About us</a></li>
+                    <li><a class="for-a-menu" href="news.html" >News&Events</a></li>
+                    <li><a class="for-a-menu" href="activity.html" >Activitys</a></li>
+                    <li><a class="for-a-menu" href="contactus.html">Contact us</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="overlayMenu">
+        <!-- nav bar end -->
+         <!-- <div class="main-activity">
+        </div> -->
+        <div id="container">
+             <!-- <div class="list">
+                <input type="button" value=" All" onclick="chng()" />   
+                <input type="button" value=" Computer 1" onclick="chng1()" /> 
+                <input type="button" value=" English" onclick="chng2()" /> 
+                <input type="button" value=" Other" onclick="chng3()" /> 
+            </div> -->
             <ul>
-                <li><a  class="for-a-menu" class="for-active" href="index.html">Home</a></li>
-                <li><a class="for-a-menu" href="aboutus.html">About us</a></li>
-                <li><a class="for-a-menu" href="news.html" >News&Events</a></li>
-                <li><a class="for-a-menu" href="activity.html" >Activitys</a></li>
-                <li><a class="for-a-menu" href="contact.html">Contact us</a></li>
+                <li class="active" onclick="chng()">
+                    <a href="#">ALL</a>
+                </li>
+                <li onclick="chng1()">
+                    <a href="#">Computer</a>
+                </li>
+                <li onclick="chng2()">
+                    <a href="#">English</a>
+                </li>
+                <li onclick="chng3()">
+                    <a href="#">Others</a>
+                </li>
+               
             </ul>
-        </div>
-    </div>
-    <!-- nav bar end -->
-    <!-- <div class="main-activity">
-    </div> -->
-    <div id="container">
-      <div class="list">
-          <input type="button" value=" All " onclick="chng()" />   
-          <input type="button" value=" Computer 1 " onclick="chng1()" /> 
-          <input type="button" value=" English " onclick="chng2()" /> 
-          <input type="button" value=" Other " onclick="chng3()" /> 
-      </div>
-      <div class="activity-image-container">
-      <div id="img1" class="ch-img">
-    
-        <img src="img/net (1).jpg"   >
+            <div class="activity-image-container">
+                <div id="img1" class="ch-img">
+        
+                    <img src="img/net (1).jpg"   >
 
-      <img src="img/net (2).jpg"  class="cc" height="200" width="250">
-      <img src="img/net (3).jpg"   class="cc" height="200" width="250">
-  </div>
-      <div id="img2" class="ch-img">
-          <div >
-          <img src="img/net (4).jpg" id="rr"  class="cc" height="200" width="250">
-          <img src="img/net (5).jpg" id="rr"  class="cc" height="200" width="250">
-          <img src="img/net (6).jpg" id="rr"  class="cc" height="200" width="250">
-          </div>
-      </div>
-          <div id="img3" class="ch-img">
-              <div>
-              <img src="img/net (7).jpg" id="rr"  class="cc" height="200" width="250">
-              <img src="img/net (8).jpg" id="rr"  class="cc" height="200" width="250">
-              <img src="img/net (9).jpg" id="rr"  class="cc" height="200" width="250">
-              </div>
-          </div>
-          </div>
-    </div>
+                    <img src="img/net (2).jpg"  class="cc" height="200" width="250">
+                    <img src="img/net (3).jpg"   class="cc" height="200" width="250">
+                </div>
+                <div id="img2" class="ch-img">
+         
+                    <img src="img/net (4).jpg" id="rr"  class="cc" height="200" width="250">
+                    <img src="img/net (5).jpg" id="rr"  class="cc" height="200" width="250">
+                    <img src="img/net (6).jpg" id="rr"  class="cc" height="200" width="250">
+                </div>
+            
+                <div id="img3" class="ch-img">
+                
+                    <img src="img/net (7).jpg" id="rr"  class="cc" height="200" width="250">
+                    <img src="img/net (8).jpg" id="rr"  class="cc" height="200" width="250">
+                    <img src="img/net (9).jpg" id="rr"  class="cc" height="200" width="250">
+                
+                </div>
+            </div>
+        </div>
+    
 </div>
 
     
@@ -136,5 +152,11 @@
         <script src="js/main.js"></script> 
         <script src="isotope-layout/isotope.pkgd.min.js"></script>
        <script src=js/activity.js></script>
+       <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script type="text/javascript">
+            $(document).on('click', 'ul li', function(){
+                $(this).addClass('active').siblings().removeClass('active')
+            })
+        </script>
     </body>
     </html>

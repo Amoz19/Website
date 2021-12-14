@@ -4,125 +4,43 @@
         <meta charset="UTF-8">
         <title>Responsive image text</title>
         <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-        <style>
-            body{
-                margin: 0;
-                padding: 0;
-                background: #262626;
-            }
-            section{
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%,-50%);
-                height: 400px;
-                width: 100%;
-                background: gray; 
-                box-shadow: 0 25px 30px rgba(0,0,0,0.5);
-                display: flex;
-            }
-            .imgBox{
-                width: 40%;
-                height: 100%;
-                background: #f00;
-                box-sizing: border-box;
-                /* border-right: 100px solid ; */
-                /* border-bottom: 400px solid transparent; */
-                background-image: url(current-ven.jpg);
-                /* background-position: ; */               
-            }
-            .swiper{
-                /* width: 100%; */
-                width: 60%;
-                padding-top: 50px;
-                padding-bottom: 50px;
-            }
-
-            .swiper-slide{
-                background-position: center;
-                background-size: cover;
-                width: 320px;
-                /* height: 300px; */
-                
-                box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
-                filter:blur(4px);
-                background: #d1ebff;
-                border-radius: 10px;
-
-            }
-            .swiper-slide-active{
-                filter: blur(0px);
-                background: #fff;
-            }
-            .testimonialBox{
-                position: relative;
-                width: 100%;
-                padding: 40px;
-                padding-top: 70px;
-                color: #999;
-            }
-            .testimonialBox .quote{
-                position: absolute;
-                top: 20px;
-                right: 100px;
-                opacity: 0.2;
-            }
-            .testimonialBox .content p{
-                width: 80%;
-            }
-            .testimonialBox .details{
-                display: flex;
-                align-items: center;
-                margin-top: 20px;
-            }
-            .testimonialBox .details .imgBx{
-                position: relative;
-                width:60px;
-                height: 60px;
-                border-radius: 50%;
-                overflow: hidden;
-                margin-right: 10px;
-            }
-            .testimonialBox .details .imgBx img{
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-            .testimonialBox .details h3{
-                font-size: 16px;
-                font-weight: 400;
-                letter-spacing: 1px;
-                color: #2196f3;
-                line-height: 1.1em;
-            }
-            .testimonialBox .details h3 span{
-                font-size: 12px;
-                color: #666;
-            }
-            .swiper-3d .swiper-slide-shawdow-left,.swiper-3d .swiper-slide-shawdow-right{
-                background-image: none;
-            }
-            /* .content{
-                width: calc(50% - 50px);
-                height: 100%;
-                background: #ff0;
-                box-sizing: border-box;
-                padding: 30px 50px;
-                font-family: sans-serif;
-                color: #fff;
-            } */
-           
-        </style>
+        <link href="css/aboutus.css" type="text/css" rel="stylesheet" />
     </head>
+
     <body>
+        <div class="top-menu">
+            <div class="top-left-menu">
+                <img src="img/start_logo.png" alt=""/>
+                <h2>Ramanyanikaya</h2>
+            </div>
+            <div class="top-right-menu">
+                <a href="index.html">Home</a>
+                <a class="for-active" href="about_us.html">About us</a>
+                <a href="news.html">News&Events</a>
+                <a href="activity.html">Activitys</a>
+                <a href="contactus.html">Contact us</a>
+            </div>
+            <div class="hamburgerLine">
+                    <div class="line line1"></div>
+                    <div class="line line2"></div>
+                    <div class="line line3"></div>
+            </div>
+            <div class="overlayMenu">
+                <ul>
+                    <li><a  class="for-a-menu" class="for-active" href="index.html">Home</a></li>
+                    <li><a class="for-a-menu" href="about_us.html">About us</a></li>
+                    <li><a class="for-a-menu" href="news.html" >News&Events</a></li>
+                    <li><a class="for-a-menu" href="activity.html" >Activitys</a></li>
+                    <li><a class="for-a-menu" href="contactus.html">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- nav end -->
         <div class="section-container">
-            <div class="columns image" style="background-image: url('slider4.png');">
+            <div class=" columns image " style="background-image: url('img/hero4.jpg');">
                 &nbsp;
             </div>
-            <div class="columns content">
+            <div class=" columns content ">
                 <div class="content-container">
                     <h5>Why do we use it?</h5>
                     <p>It is a long established fact that a reader will be distracted by the readable 
@@ -132,7 +50,7 @@
                         publishing packages and web page editors now use Lorem Ipsum as their default model 
                         text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. 
                         Various versions have evolved over the years, sometimes by accident, sometimes on purpose 
-                        (injected humour and the like).</p>
+                        (injected humour and the like)</p>
                         <p>It is a long established fact that a reader will be distracted by the readable 
                             content of a page when looking at its layout. The point of using Lorem Ipsum 
                             is that it has a more-or-less normal distribution of letters, as opposed to using 
@@ -140,46 +58,51 @@
                             publishing packages and web page editors now use Lorem Ipsum as their default model 
                             text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. 
                             Various versions have evolved over the years, sometimes by accident, sometimes on purpose 
-                            (injected humour and the like).</p>    
+                            (injected humour and the like)</p>    
                 </div>
             </div>          
         </div>
         <div class="container">
             <div class="box">
-                <img src="first_ven.jpg" alt="">
+                <img src="img/first_ven.jpg" alt="">
                 <h4>Name</h4>
 				<p>2000 - 2021</p>
             </div>
             <div class="box">
-                <img src="second_ven.jpg" alt="">
+                <img src="img/second_ven.jpg" alt="">
                 <h4>Name</h4>
 				<p>2000 - 2021</p>
             </div>
             <div class="box">
-                <img src="third_ven.jpg" alt="">
+                <img src="img/third_ven.jpg" alt="">
                 <h4>Name</h4>
 				<p>2000 - 2021</p>
             </div>
             <div class="box">
-                <img src="fouth_ven.jpg" alt="">
+                <img src="img/fouth_ven.jpg" alt="">
                 <h4>Name</h4>
 				<p>2000 - 2021</p>
             </div>
             <div class="box">
-                <img src="fith_ven.jpg" alt="">
+                <img src="img/fith_ven.jpg" alt="">
                 <h4>Name</h4>
 				<p>2000 - 2021</p>
             </div>
             
         </div>
 
-        <!-- <section>            
-            <div class="imgBox"></div>
+         <section class="biograph">
+            <div class="imgbx">
+                 <div class="ven-image-div">
+                    <img src="img/current-ven-removebg-preview.png" alt="">
+                </div>
+            </div>
+            <!-- <div class="imgBox"></div> -->
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <div class="testimonialBox">
-                        <img src="qoute.png" alt="" class="quote">
+                        <img src="img/qoute.png" alt="" class="quote">
                         <div class="content">
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -189,7 +112,7 @@
                             </p>
                             <div class="details">
                                 <div class="imgBx">
-                                    <img src="current-ven.jpg" alt="">
+                                    <img src="img/current-ven-removebg-preview.png" alt="">
                                 </div>
                                 <h3>Nai Kosalia<br>
                                     <span>
@@ -202,17 +125,17 @@
                   </div>
                   <div class="swiper-slide">
                     <div class="testimonialBox">
-                        <img src="qoute.png" alt="" class="quote">
+                        <img src="img/qoute.png" alt="" class="quote">
                         <div class="content">
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                2Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                                 Odit neque rerum quis dolore, adipisci quia reprehenderit eaque.
                                  Sed ab ipsam perferendis, cum corporis, aperiam accusantium hic 
                                  reiciendis commodi exercitationem nihil?
                             </p>
                             <div class="details">
                                 <div class="imgBx">
-                                    <img src="current-ven.jpg" alt="">
+                                    <img src="img/current-ven-removebg-preview.png" alt="">
                                 </div>
                                 <h3>Someone Famous<br>
                                     <span>
@@ -224,18 +147,18 @@
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="testimonialBox">
-                        <img src="qoute.png" alt="" class="quote">
+                    <div class=" testimonialBox ">
+                        <img src="img/qoute.png" alt="" class="quote">
                         <div class="content">
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                3Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                                 Odit neque rerum quis dolore, adipisci quia reprehenderit eaque.
                                  Sed ab ipsam perferendis, cum corporis, aperiam accusantium hic 
                                  reiciendis commodi exercitationem nihil?
                             </p>
                             <div class="details">
                                 <div class="imgBx">
-                                    <img src="current-ven.jpg" alt="">
+                                    <img src="img/current-ven-removebg-preview.png" alt="">
                                 </div>
                                 <h3>Someone Famous<br>
                                     <span>
@@ -249,24 +172,58 @@
                   
                 </div>  
             </div>
-        </section> -->
+          
+        </section> 
+
+         <!-- footer start -->
+     <div class="footer">
+        <div class="foot-logo">
+            <img src="img/Logo1.png" alt="logo" />
+            <h2>Bartheikpitakotmon</h2>
+        </div>
+        <div class="contact">
+            <h3>Contact us</h3>
+            <div class="contact-div">
+                <div class="address">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>
+                        Rajadhiraj Road,KwanTokano <span class="break">Teasa Takohmine</span>
+                    </span>
+                </div>
+                <div class="contact-number">
+                    <i class="fas fa-mobile-alt"></i>
+                    <span>
+                        09255882712 
+                    </span>
+                </div>
+                <div class="contact-email">
+                    <i class="far fa-envelope"></i>
+                    <span>
+                        naikosalla@gmail.com
+                    </span>
+                </div>
+            </div>
+            <div class="icon"> 
+                    <a href="https://web.facebook.com/trendmusicjustforyou"><i class="fab fa-facebook" style="font-size:30px"></i></a></li>
+                    <a href="https://www.youtube.com/c/AmozsSharing2002"><i class="fab fa-youtube" style="font-size:30px"></i></a></li>
+                    <a ><i class="fab fa-instagram" style="font-size:30px"></i></a></li>
+                    <a href="tel:09255882712"><i class="fas fa-phone-alt" style="font-size:30px"></i></a></li>
+                    <a href="mailto:aungmon10co@gmail.com"><i class="far fa-envelope" style="font-size:30px"></i></a></i>
+            </div>
+        </div>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1697.9254539606734!2d97.49376796798802!3d16.454254731385735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c2a1f23308d949%3A0x2499a70584e64a3d!2z4YCY4YCs4YCQ4YCt4YCv4YCA4YC6IOGAgOGAveGArOGAlOGAuuGAkOGAneGAuuGAgOGBnuGAtA!5e0!3m2!1sen!2sfr!4v1632717627826!5m2!1sen!2sfr"
+                width="320" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+    <!-- footer end -->
+            <div class="copyright">
+            &copy; Copyright Ramanyanikarya 2021 All Rights Reserved.<br>
+            </div>
        
         <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-        <script>
-            var swiper = new Swiper(".mySwiper", {
-              effect: "coverflow",
-              grabCursor: true,
-              centeredSlides: true,
-              slidesPerView: "auto",
-              coverflowEffect: {
-                rotate: 0,
-                stretch: 0,
-                depth: 100,
-                modifier: 2,
-                slideShadows: true,
-              },
-             loop:true,
-            });
-          </script>
+        <script src="js/about.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>
