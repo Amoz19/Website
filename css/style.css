@@ -57,8 +57,9 @@ html,body{
 
 .hamburgerLine{
 cursor: pointer;
-top:0px;
+top:15px;
 right: 10px;
+
 
 position: fixed;
 display: none;
@@ -498,7 +499,7 @@ h1{
   background-color: #222;
   border: none;
   color: #fff;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 
@@ -507,7 +508,7 @@ h1{
 }
 
 .event-left .main-left-right .right{
-  padding-left: 50px;
+  padding-left: 10px;
 }
 
 
@@ -738,7 +739,7 @@ line-height: 10vh;
 }
  @media(max-width:1000px) {
 .event-left{
-    width: 80%;
+    width: 90%;
     margin: auto;
   }
 .event-right{
