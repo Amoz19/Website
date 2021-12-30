@@ -398,8 +398,12 @@ line-height: 10vh;
   }
 
   #container ul{
-    width: 95%;
-    padding: 0 10px;
+    width: 100%;
+    padding: 0 1px;
+  }
+
+  #container ul li a{
+    padding: 10px;
   }
   
 }
