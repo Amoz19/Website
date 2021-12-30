@@ -239,7 +239,7 @@ border-bottom: solid 3px var(--golden);
 #container ul{ 
   width: 32%;
   display: flex;
-  /* justify-content: space-between;  */
+  justify-content: space-around; 
   margin: auto;
 }
 
@@ -248,7 +248,8 @@ border-bottom: solid 3px var(--golden);
 }
 #container ul li a{
   display: flex;
-  padding: 10px 20px;
+  justify-content: space-evenly;
+  padding: 10px 0px;
   text-decoration: none;
   text-transform: uppercase;
   color: #262626;
@@ -398,12 +399,9 @@ line-height: 10vh;
   }
 
   #container ul{
-    width: 100%;
-    padding: 0 1px;
-  }
-
-  #container ul li a{
-    padding: 10px;
+    margin: 10px auto;
+    width: 85%;
+    
   }
   
 }
