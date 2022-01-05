@@ -8,10 +8,7 @@ html,body{
   font-family: sans-serif;
 }
 
-.container{
-  max-width: 1350px;
-  margin: 0 auto;
-}
+
 
 /* nav start */
 .top-menu{
@@ -260,23 +257,23 @@ text-align:center;
  width: 80%;
 }
 
-@media(max-width:670px){
-.imgbx{ 
-  margin: auto;   
-}
+@media(max-width:980px){
+.imgbx{
+    width: 80%;
+    margin: auto;
+  }
+
+  .biograph{
+    display: block;
+  }
 
 .imgbx .ven-image-div img{
-  width: 120%;
-  height: 120%;
-}
-
-.biograph{
-  display: block;
-}
+  width: 50%;
 }
 
 .details .imgBx img{
 width: 100%;
+}
 }
 
 
@@ -300,6 +297,10 @@ width: 100%;
   width: 60%;
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.swiper .content p{
+  text-align: justify;
 }
 
 .swiper-slide{
@@ -378,11 +379,15 @@ width: 100%;
       width: 100%;
       height: 400px;
   }
-
+  
   .section-container .swiper.mySwiper{
       display: block;
       order: 2;
       width: 100%;
+  }
+
+  .swiper{
+    width: 73%;
   }
 }
 @media  screen and (max-width:1000px) {
@@ -410,7 +415,8 @@ width: 100%;
 
 @media screen and (max-width:980px){
   .container{
-    width: 40%;
+    width:30%;
+    margin: auto;
     display: block;
     align-items: center;
     
@@ -471,6 +477,7 @@ cursor: pointer;
 
 .contact .icon i{
   margin:0 0 50px 0;
+  font-size: 35px;
   color: #000;
 }
 
@@ -514,15 +521,43 @@ line-height: 10vh;
   }  
 }
 
-@media(max-width:950px){
+ @media(max-width:980px){
+
+  .footer{
+    flex-direction: column;
+  }
   .foot-logo{
-    width: 100%;
+    width: 80%;
   }
 
+  .foot-logo h2{
+    font-size:40px;
+  } 
+
   .contact{
-    width: 100%;
+    width: 80%;
     height: auto;
     margin: 0 auto;
+  }
+
+  .contact h3{
+    font-size: 45px;
+  }
+
+  .contact-div i{
+    font-size: 50px;
+  }
+
+  .contact span{
+    font-size: 30px;
+  }
+
+  .contact .icon i{
+    font-size: 70px;
+  }
+
+  .icon i{
+    font-size: 40px;
   }
 
   .map{
@@ -531,8 +566,22 @@ line-height: 10vh;
     margin: 0 auto;
   }
 
+
+
+  
+
   .foot-logo img{
     width: 40%;
   }
+
+  .copyright {
+    line-height: 5vh;
+    }
+
+  .copyright small{
+     font-size: 20px;
+      }
 }
+
+
 
