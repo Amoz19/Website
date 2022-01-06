@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+    user-select: none;
+}
+body{
+    
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.maincontainer{
+    width: 40%;
+    background-color:#f9f9f9;
+    padding: 20px 40px;
+}
+
+.maincontainer h3{
+    text-align: center;
+}
+
+
+
+.form-control:focus,.educationcontainer:focus,.birthdaycontainer #birthday:active{
+    border-color:#ffd615;
+    ;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgb(236, 213, 6);
+  }
+
+.gendercontainer{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+   
+    
+}
+
+
+.gendercontainer .gender{
+    margin-left: 15px;
+}
+
+
+
+.birthdaycontainer{
+    /* display: flex; */
+    
+}
+
+.birthdaycontainer .labelbirthday{
+    margin-right: 15px;
+    padding-top: 20px;
+}
+
+.birthdaycontainer #birthday{
+    width: 100%;
+    padding: 15px 0px;
+    border-radius: 4px;
+    /* box-shadow: 1px 1px 1px #888; */
+    border:1px solid #999;
+    outline:none;
+}
+
+.educationcontainer{
+  padding:15px;
+}
+
+.submit{
+    width: 100%;
+    padding: 10px;
+    background-color: darkblue;
+    border: none;
+    color: #fff;
+}
+
+@media(max-width:980px){
+    .maincontainer h3{
+        font-size: 18px;
+    }
+}
+
