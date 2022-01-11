@@ -187,8 +187,11 @@ border-bottom: solid 3px var(--golden);
   font-weight: 400;
   font-size: 16px;
   margin-bottom: 15px;
+  /* padding: 0px 30px; */
   text-align: justify;
 }
+
+
 
 .container{
   width: 90%;
@@ -214,11 +217,11 @@ border-bottom: solid 3px var(--golden);
   z-index: 2;
 } */
 .box h4{
-  line-height: 3;
+  /* line-height: 3; */
 text-align:center;
 }
 .box p{
-  line-height: 1.5;
+  line-height: 1;
   text-align: center;
 }
 
@@ -333,8 +336,9 @@ width: 100%;
   right: 100px;
   opacity: 0.2;
 }
-.testimonialBox .content p{
-  width: 80%;
+.testimonialBox .content p {
+  width: 60%;
+  padding: 10px;
 }
 .testimonialBox .details{
   display: flex;

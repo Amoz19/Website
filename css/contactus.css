@@ -272,13 +272,15 @@ border-bottom: solid 3px var(--golden);
     font-size: 14px;
   }
   
-  .contact .php-email-form input::focus, .contact .php-email-form textarea::focus {
+  .contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
     background-color: #68A4C4;
   }
   
   .contact .php-email-form input {
     padding: 20px 15px;
   }
+
+
   
   .contact .php-email-form textarea {
     padding: 12px 15px;
@@ -386,7 +388,7 @@ border-bottom: solid 3px var(--golden);
     height: 10vh; */
     color: #000;
     text-align: center; 
-    background-color:#d2ad32;
+    background-color:var(--golden);
     line-height: 5vh;
     }
     
