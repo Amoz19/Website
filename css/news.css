@@ -394,7 +394,7 @@ height: 300px;
 height: 10vh; */
 color: #000;
 text-align: center; 
-background-color:#d2ad32;
+background-color:var(--golden);
 line-height: 10vh;
 }
 
