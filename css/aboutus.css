@@ -260,7 +260,7 @@ text-align:center;
 
 @media(max-width:980px){
 .imgbx{
-    width: 80%;
+    width: 90%;
     margin: auto;
   }
 
@@ -374,6 +374,7 @@ width: 100%;
 @media  screen and (max-width:980px) {
   .section-container{
       flex-flow: row wrap;
+     
   }
 
   .section-container .columns.image{
@@ -417,7 +418,7 @@ width: 100%;
 
 @media screen and (max-width:980px){
   .container{
-    width:30%;
+    width:70%;
     margin: auto;
     display: block;
     align-items: center;
@@ -523,7 +524,7 @@ line-height: 10vh;
   }  
 }
 
- @media(max-width:980px){
+ /* @media(max-width:980px){
 
   .footer{
     flex-direction: column;
@@ -533,7 +534,7 @@ line-height: 10vh;
   }
 
   .foot-logo h2{
-    font-size:40px;
+    font-size:27px;
   } 
 
   .contact{
@@ -543,15 +544,15 @@ line-height: 10vh;
   }
 
   .contact h3{
-    font-size: 45px;
+    font-size: 22px;
   }
 
   .contact-div i{
-    font-size: 50px;
+    font-size: 25px;
   }
 
   .contact span{
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .contact .icon i{
@@ -580,6 +581,28 @@ line-height: 10vh;
      font-size: 20px;
       }
   
+} */
+
+@media(max-width:950px){
+  .foot-logo{
+    width: 80%;
+  }
+
+  .contact{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .map{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .foot-logo img{
+    width: 40%;
+  }
 }
 
 

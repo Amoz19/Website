@@ -3,7 +3,7 @@
     user-select: none;
 }
 body{
-    
+    background:url(../img/computer.jpg);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -11,9 +11,11 @@ body{
 }
 
 .maincontainer{
-    width: 40%;
+    width: 85%;
+
+    margin: auto;
     background-color:#f9f9f9;
-    padding: 20px 40px;
+    padding: 20px 10px;
 }
 
 .maincontainer h3{
