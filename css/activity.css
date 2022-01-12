@@ -396,16 +396,23 @@ line-height: 10vh;
 @media(max-width:900px){
   .nav-image{
     width: 90%;
-    /* margin-left: 20px; */
+   /* margin: auto; */
+  }
+
+  .nav-image ul li a{
+  padding: 5px 15px;
   
   }
   
   .ch-img{
-    width: 64%;
+    width: 70%;
     margin:auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    align-items: center;
+
+    user-select: none;
   }
 
   #container ul{

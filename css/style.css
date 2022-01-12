@@ -739,7 +739,7 @@ line-height: 10vh;
 }
  @media(max-width:1000px) {
 .event-left{
-    width: 90%;
+    width: 80%;
     margin: auto;
   }
 .event-right{
